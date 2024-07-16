@@ -10,7 +10,7 @@ from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 file_path = "./data/ecos.csv"
 
 df = pd.read_csv(file_path)
-df['DATE'] = pd.to_datetime(df['DATE'], format='%Y-%m-%d')
+df['DATE'] = pd.to_datetime(df['DATE'])
 
 # Streamlit 앱 제목
 st.title('Ecos Economic Data Analysis')
